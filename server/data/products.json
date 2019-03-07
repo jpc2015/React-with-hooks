@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "Dutty Calls",
+      "price": 10.9,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 1,
+      "title": "Last Super",
+      "price": 29.45,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 3,
+      "title": "The Grim Reaper",
+      "price": 9.0,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 4,
+      "title": "The Knuckle Sandwich",
+      "price": 14.0,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 6,
+      "title": "Arkadia Selection",
+      "price": 13.25,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    },
+
+    {
+      "id": 7,
+      "title": "Short Sleeve T-Shirt",
+      "price": 75.0,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": false
+    },
+
+    {
+      "id": 8,
+      "title": "Fides Contruction",
+      "price": 10.9,
+      "currencyId": "USD",
+      "currencyFormat": "$",
+      "isFreeShipping": true
+    }
+  ]
+}

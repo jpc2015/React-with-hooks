@@ -1,0 +1,148 @@
+.cart {
+  display: inline-block;
+  background-color: gray;
+  width: 25%;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  .cart-content {
+    padding: 20px;
+    color: #ececec;
+
+    .cart-header {
+      font-size: 1.2em;
+      position: relative;
+
+      &::after{
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #eabf00;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  .cart-container{
+    position: relative;
+    padding-bottom: 80px;
+
+    .products-empty {
+      color: #ececec;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .cart-item {
+      border: solid 2px rgba(0, 0, 0, 0.2);
+      background-color: #eabf00;
+      position: relative;
+      padding: 5%;
+      margin-bottom: 5px;
+      border-radius: 20px;
+
+      &.cart-item--mouseover {
+        background: #0c0b10;
+
+        .cart-item-details {
+          .title,
+          .desc {
+            text-decoration: line-through;
+            opacity: 0.6;
+          }
+        }
+
+        .cart-item-price {
+          text-decoration: line-through;
+          opacity: 0.6;
+        }
+      }
+
+      .cart-item-del {
+        width: 16px;
+        height: 16px;
+        top: 15px;
+        right: 5%;
+        border-radius: 50%;
+        position: absolute;
+        background-size: auto 100%;
+        background-image: url('../../static/delete-icon.png');
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+          background-position-x: -17px;
+        }
+      }
+
+      .cart-item-details,
+      .cart-item-price {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .cart-item-details {
+        width: 57%;
+
+        .title {
+          color: #ececec;
+          margin: 0;
+        }
+
+        .desc {
+          color: #5b5a5e;
+          margin: 0;
+        }
+      }
+      .cart-item-price {
+        color: #5b5a5e;
+        text-align: right;
+        width: 25%;
+      }
+    }
+  }
+
+  .cart-footer{
+    padding: 5%;
+    bottom: 0;
+    background-color: #1b1a20;
+
+
+    .sub,
+    .sub-price {
+      color: #fff;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .sub {
+      width: 40%;
+    }
+
+    .sub-price {
+      width: 60%;
+      text-align: right;
+    }
+
+    .buy-btn {
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #0c0b10;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      cursor: pointer;
+
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #eabf00;
+      }
+    }
+  }
+}
+
